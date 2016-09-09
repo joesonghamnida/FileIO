@@ -44,6 +44,7 @@ public class FileIO {
              switch (selection) {
                  case "1":
                      loadFile();
+                     System.out.println(cat);
                      break;
                  case "2":
                      cat.update();
@@ -80,7 +81,7 @@ public class FileIO {
         s.close();
 
         JsonParser p = new JsonParser();
-        System.out.println(p.parse(contents, Cat.class));
+        //System.out.println(p.parse(contents, Cat.class));
         return p.parse(contents, Cat.class);
     }
 }//EOF
