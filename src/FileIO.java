@@ -81,7 +81,6 @@ public class FileIO {
         s.close();
 
         JsonParser p = new JsonParser();
-        //System.out.println(p.parse(contents, Cat.class));
         return p.parse(contents, Cat.class);
     }
 }//EOF
